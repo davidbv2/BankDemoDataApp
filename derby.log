@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Fri Apr 20 18:17:27 EDT 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0162-e522-3389-00000b84c5e0 
+Sat Apr 21 15:34:05 EDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0162-e9b3-00cc-00000d4e7b60 
 on database directory memory:/Users/davidvalentineii/Eclipse Projects/bank-demo-data/testdb with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
 Loaded from file:/Users/davidvalentineii/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
 java.vendor=Oracle Corporation

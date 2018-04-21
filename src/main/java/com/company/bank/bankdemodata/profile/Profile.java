@@ -1,10 +1,14 @@
 package com.company.bank.bankdemodata.profile;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 // created this Profile class as our model object. This class is the template of the JSON response.
  
-
+@Entity
 public class Profile {
 	
+	@Id
 	private int id;
 	private String name;
 	private String address;
