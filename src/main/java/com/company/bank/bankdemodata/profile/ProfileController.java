@@ -1,6 +1,7 @@
 package com.company.bank.bankdemodata.profile;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,7 +28,7 @@ public class ProfileController {
 	 * then passed thru our profileService method call
 	 */
 	@RequestMapping("/profiles/{id}")
-	public Profile getProfile (@PathVariable int id){
+	public Optional<Profile> getProfile (@PathVariable String id){
 		return profileService.getProfile(id);
 	}
 	
@@ -43,12 +44,12 @@ public class ProfileController {
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT,value="/profiles/{id}")
-	public void updateProfile (@RequestBody Profile profile, @PathVariable int id){
+	public void updateProfile (@RequestBody Profile profile, @PathVariable String id){
 		profileService.updateProfile(id, profile);
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE,value="/profiles/{id}")
-	public void deleteProfile (@PathVariable int id){
+	public void deleteProfile (@PathVariable String id){
 		profileService.deleteProfile(id);
 	}
 	

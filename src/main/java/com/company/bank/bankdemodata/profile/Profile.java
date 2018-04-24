@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Profile {
 	
 	@Id
-	private int id;
+	private String id;
 	private String name;
 	private String address;
 	private String city;
@@ -22,7 +22,7 @@ public class Profile {
 		
 	}	
 	
-	public Profile(int id, String name, String address, String city, String state, int zipCode, long phoneNum, String userName) {
+	public Profile(String id, String name, String address, String city, String state, int zipCode, long phoneNum, String userName) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -34,11 +34,11 @@ public class Profile {
 		this.userName = userName;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
